@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import CharacterImage from './CharacterImage';
 import CharacterStats from './CharacterStats';
+import GlobalStyles from './GlobalStyles';
 
 const Container = styled.div`
-  background-color: #6ec27c; // Light green background
+  background-color: #519669; // Light green background
   min-height: 100vh;           // Ensure the background covers the entire viewport height
   // ... your other landing page layout styles
 `;
@@ -29,6 +30,8 @@ function App() {
   };
 
   return (
+    <>
+     <GlobalStyles />
     <Container>
       <h1>Os Frutos do Espírito</h1>
 
@@ -45,6 +48,7 @@ function App() {
       <CharacterStats />
       
     </Container>
+    </>
   );
 }
 
