@@ -132,7 +132,7 @@ const CharacterStats = () => {
         <input 
           type="number" 
           value={patience} 
-          onChange={(event) => handleInputChange(event, setLove)} 
+          onChange={(event) => handleInputChange(event, setPatience)} 
           min="0" 
           max="100" 
         />
@@ -143,7 +143,7 @@ const CharacterStats = () => {
         <input 
           type="number" 
           value={kindness} 
-          onChange={(event) => handleInputChange(event, setLove)} 
+          onChange={(event) => handleInputChange(event, setKindness)} 
           min="0" 
           max="100" 
         />
@@ -155,7 +155,7 @@ const CharacterStats = () => {
         <input 
           type="number" 
           value={goodness} 
-          onChange={(event) => handleInputChange(event, setLove)} 
+          onChange={(event) => handleInputChange(event, setGoodness)} 
           min="0" 
           max="100" 
         />
@@ -166,7 +166,7 @@ const CharacterStats = () => {
         <input 
           type="number" 
           value={faith} 
-          onChange={(event) => handleInputChange(event, setLove)} 
+          onChange={(event) => handleInputChange(event, setFaith)} 
           min="0" 
           max="100" 
         />
@@ -177,7 +177,7 @@ const CharacterStats = () => {
         <input 
           type="number" 
           value={gentleness} 
-          onChange={(event) => handleInputChange(event, setLove)} 
+          onChange={(event) => handleInputChange(event, setGentleness)} 
           min="0" 
           max="100" 
         />
@@ -188,7 +188,7 @@ const CharacterStats = () => {
         <input 
           type="number" 
           value={selfcontrol} 
-          onChange={(event) => handleInputChange(event, setLove)} 
+          onChange={(event) => handleInputChange(event, setSelfcontrol)} 
           min="0" 
           max="100" 
         />
