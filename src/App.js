@@ -5,7 +5,7 @@ import CharacterStats from './CharacterStats';
 import GlobalStyles from './GlobalStyles';
 
 const Container = styled.div`
-  background-color: #519669; // Light green background
+  background-color: #6ec27c; // Light green background
   min-height: 100vh;           // Ensure the background covers the entire viewport height
   // ... your other landing page layout styles
 `;
