@@ -3,10 +3,13 @@ import styled from 'styled-components';
 import CharacterImage from './CharacterImage';
 import CharacterStats from './CharacterStats';
 import GlobalStyles from './GlobalStyles';
+import backgroundImage from '/back.png';
 
 const Container = styled.div`
-  background-color: #6ec27c; // Light green background
-  min-height: 100vh;           // Ensure the background covers the entire viewport height
+  background-image: url(${backgroundImage});
+  background-size: cover;        // or 'contain', depending on desired effect
+  background-repeat: no-repeat;  // Prevent image repetition
+  min-height: 100vh;             // Ensure background covers full viewport height
   // ... your other landing page layout styles
 `;
 
