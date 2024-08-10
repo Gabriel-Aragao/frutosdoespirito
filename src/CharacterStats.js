@@ -39,7 +39,7 @@ const PrayButton = styled.button`
 
 const CharacterStats = () => {
   // Initialize state for each stat
-  const [love, setLove] = useState(80); 
+  const [love, setLove] = useState(0); 
   const [joy, setJoy] = useState(0);
   const [peace, setPeace] = useState(0); 
   const [patience, setPatience] = useState(0); 
