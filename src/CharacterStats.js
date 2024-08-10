@@ -195,7 +195,7 @@ const CharacterStats = () => {
       </StatBar>
 
 
-      <PrayButton onClick={handlePrayClick}>Orar!</PrayButton>
+      <PrayButton onClick={handlePrayClick}>Oração</PrayButton>
     </div>
   );
 };
