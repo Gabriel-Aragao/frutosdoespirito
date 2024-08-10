@@ -40,14 +40,14 @@ const PrayButton = styled.button`
 const CharacterStats = () => {
   // Initialize state for each stat
   const [love, setLove] = useState(80); 
-  const [joy, setJoy] = useState(65);
-  const [peace, setPeace] = useState(90); 
-  const [patience, setPatience] = useState(70); 
-  const [kindness, setKindness] = useState(68);
-  const [goodness, setGoodness] = useState(82);
-  const [faith, setFaith] = useState(75); 
-  const [gentleness, setGentleness] = useState(55);
-  const [selfcontrol, setSelfcontrol] = useState(45);
+  const [joy, setJoy] = useState(0);
+  const [peace, setPeace] = useState(0); 
+  const [patience, setPatience] = useState(0); 
+  const [kindness, setKindness] = useState(0);
+  const [goodness, setGoodness] = useState(0);
+  const [faith, setFaith] = useState(0); 
+  const [gentleness, setGentleness] = useState(0);
+  const [selfcontrol, setSelfcontrol] = useState(0);
 
   const handlePrayClick = () => {
     setLove(Math.min(100, love + Math.floor(Math.random() * 10) + 1)); // Increase love, capped at 100
@@ -66,17 +66,17 @@ const CharacterStats = () => {
   // useEffect to automatically decrease stats every 3 seconds
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setLove(prevLove => Math.max(0, prevLove - 1)); // Decrease love, floored at 0
-      setJoy(prevJoy => Math.max(0, prevJoy - 1));    // Decrease joy, floored at 0
-      setPeace(prevPeace => Math.max(0, prevPeace - 1));
-      setPatience(prevPatience => Math.max(0, prevPatience - 1));
-      setKindness(prevKindness => Math.max(0, prevKindness - 1));
-      setGoodness(prevGoodness => Math.max(0, prevGoodness - 1));
-      setFaith(prevFaith => Math.max(0, prevFaith - 1));
-      setGentleness(prevGentleness => Math.max(0, prevGentleness - 1));
-      setSelfcontrol(prevSelfcontrol => Math.max(0, prevSelfcontrol - 1));
+      setLove(prevLove => Math.max(0, prevLove - 5)); // Decrease love, floored at 0
+      setJoy(prevJoy => Math.max(0, prevJoy - 5));    // Decrease joy, floored at 0
+      setPeace(prevPeace => Math.max(0, prevPeace - 5));
+      setPatience(prevPatience => Math.max(0, prevPatience - 5));
+      setKindness(prevKindness => Math.max(0, prevKindness - 5));
+      setGoodness(prevGoodness => Math.max(0, prevGoodness - 5));
+      setFaith(prevFaith => Math.max(0, prevFaith - 5));
+      setGentleness(prevGentleness => Math.max(0, prevGentleness - 5));
+      setSelfcontrol(prevSelfcontrol => Math.max(0, prevSelfcontrol - 5));
       // ... decrease other stats similarly
-    }, 1000); // 3000 milliseconds = 3 seconds
+    }, 30000); // 3000 milliseconds = 3 seconds
 
     // Clean up the interval when the component unmounts
     return () => clearInterval(intervalId);
