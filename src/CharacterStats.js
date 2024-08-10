@@ -5,8 +5,9 @@ const StatBar = styled.div`
   display: flex;          
   align-items: center;    
   justify-content: space-between;
-  margin-bottom: 0px; // Adjust this value to control the spacing
+  margin-bottom: 2px; // Adjust this value to control the spacing
   margin-top: 0px; // Adjust this value to control the spacing
+  height: 40px; // Set the desired height here
 
   h4 {
     margin-right: 10px;   
