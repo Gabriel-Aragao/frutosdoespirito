@@ -5,8 +5,10 @@ const StatBar = styled.div`
   display: flex;          
   align-items: center;    
   justify-content: space-between;
+  margin-bottom: 0px; // Adjust this value to control the spacing
+  margin-top: 0px; // Adjust this value to control the spacing
 
-  h3 {
+  h4 {
     margin-right: 10px;   
     flex: 0 0 auto;       
     width: 100px;         // Or adjust to your desired width 
@@ -26,6 +28,12 @@ const StatBar = styled.div`
       margin-left: 10px;  // Add some spacing between progress and input
     }
   }
+`;
+
+const PrayButton = styled.button`
+  width: 100%; // Make the button take up the full width of its parent container
+  padding: 10px; // Add some padding for better visual appearance
+  // ... other button styles you might have
 `;
 
 const CharacterStats = () => {
@@ -84,9 +92,8 @@ const CharacterStats = () => {
 
   return (
     <div>
-      <h2>Character Stats</h2>
       <StatBar>
-        <h3>Amor</h3>
+        <h4>Amor</h4>
         <progress value={love} max="100"></progress> 
         <input 
           type="number" 
@@ -97,7 +104,7 @@ const CharacterStats = () => {
         />
       </StatBar>
       <StatBar>
-        <h3>Alegria</h3>
+        <h4>Alegria</h4>
         <progress value={joy} max="100"></progress> 
         <input 
           type="number" 
@@ -108,7 +115,7 @@ const CharacterStats = () => {
         />
       </StatBar>
       <StatBar>
-        <h3>Paz</h3>
+        <h4>Paz</h4>
         <progress value={peace} max="100"></progress> 
         <input 
           type="number" 
@@ -119,7 +126,7 @@ const CharacterStats = () => {
         />
       </StatBar>
       <StatBar>
-        <h3>Paciência</h3>
+        <h4>Paciência</h4>
         <progress value={patience} max="100"></progress> 
         <input 
           type="number" 
@@ -130,7 +137,7 @@ const CharacterStats = () => {
         />
       </StatBar>
       <StatBar>
-        <h3>Amabilidade</h3>
+        <h4>Amabilidade</h4>
         <progress value={kindness} max="100"></progress> 
         <input 
           type="number" 
@@ -142,7 +149,7 @@ const CharacterStats = () => {
         
       </StatBar>
       <StatBar>
-        <h3>Bondade</h3>
+        <h4>Bondade</h4>
         <progress value={goodness} max="100"></progress> 
         <input 
           type="number" 
@@ -153,7 +160,7 @@ const CharacterStats = () => {
         />
       </StatBar>
       <StatBar>
-        <h3>Fidelidade</h3>
+        <h4>Fidelidade</h4>
         <progress value={faith} max="100"></progress> 
         <input 
           type="number" 
@@ -164,7 +171,7 @@ const CharacterStats = () => {
         />
       </StatBar>
       <StatBar>
-        <h3>Mansidao</h3>
+        <h4>Mansidao</h4>
         <progress value={gentleness} max="100"></progress> 
         <input 
           type="number" 
@@ -175,7 +182,7 @@ const CharacterStats = () => {
         />
       </StatBar>
       <StatBar>
-        <h3>Dominio próprio</h3>
+        <h4>Dominio próprio</h4>
         <progress value={selfcontrol} max="100"></progress> 
         <input 
           type="number" 
@@ -187,7 +194,7 @@ const CharacterStats = () => {
       </StatBar>
 
 
-      <button onClick={handlePrayClick}>Orar!</button>
+      <PrayButton onClick={handlePrayClick}>Orar!</PrayButton>
     </div>
   );
 };
