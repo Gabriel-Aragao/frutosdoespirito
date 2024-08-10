@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import CharacterImage from './CharacterImage';
 import CharacterStats from './CharacterStats';
 import GlobalStyles from './GlobalStyles';
-import backgroundImage from '../public/back.png';
+import backgroundImage from './back.png';
 
 const Container = styled.div`
   background-image: url(${backgroundImage});
