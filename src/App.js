@@ -4,7 +4,9 @@ import CharacterImage from './CharacterImage';
 import CharacterStats from './CharacterStats';
 
 const Container = styled.div`
-  // Your landing page layout styles
+  background-color: #6ec27c; // Light green background
+  min-height: 100vh;           // Ensure the background covers the entire viewport height
+  // ... your other landing page layout styles
 `;
 
 const ImageAndInputContainer = styled.div`
