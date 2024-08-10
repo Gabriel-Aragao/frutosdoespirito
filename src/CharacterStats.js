@@ -39,15 +39,15 @@ const PrayButton = styled.button`
 
 const CharacterStats = () => {
   // Initialize state for each stat
-  const [love, setLove] = useState(0); 
-  const [joy, setJoy] = useState(0);
-  const [peace, setPeace] = useState(0); 
-  const [patience, setPatience] = useState(0); 
-  const [kindness, setKindness] = useState(0);
-  const [goodness, setGoodness] = useState(0);
-  const [faith, setFaith] = useState(0); 
-  const [gentleness, setGentleness] = useState(0);
-  const [selfcontrol, setSelfcontrol] = useState(0);
+  const [love, setLove] = useState(); 
+  const [joy, setJoy] = useState();
+  const [peace, setPeace] = useState(); 
+  const [patience, setPatience] = useState(); 
+  const [kindness, setKindness] = useState();
+  const [goodness, setGoodness] = useState();
+  const [faith, setFaith] = useState(); 
+  const [gentleness, setGentleness] = useState();
+  const [selfcontrol, setSelfcontrol] = useState();
 
   const handlePrayClick = () => {
     setLove(Math.min(100, love + Math.floor(Math.random() * 10) + 1)); // Increase love, capped at 100
